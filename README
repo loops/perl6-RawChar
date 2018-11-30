@@ -1,0 +1,20 @@
+IO::RawChar
+
+   Little module to accept non-blocking characters from the terimal on Linux.
+   This can be used to look for user keypresses during long-running operations.
+   Combined with a module like Terminal::Spinners you can provide a progress
+   bar and still allow the user to interrupt the process on demand by pressing
+   "Q" or whatever key is appropriate.
+
+Note:
+	
+	Once the class has been instantiated the terminal will be in "raw" mode
+	which will be a problem for the user if it isn't reset before program end.
+	So this class will reset the terminal if SIGTERM is sent to the program.
+	It's up to you to make sure that SIGTERM causes the program to exit after
+	that.
+
+Bugs:
+
+	The input is single byte ASCII characters rather than Unicode.  Sorry.
+
