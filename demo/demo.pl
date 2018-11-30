@@ -19,7 +19,7 @@ sub raw_input() {
 	}
 }
 
-# SIGTERM must explicitly exit, since RawChar will reset terminal on SIGTERM but
+# SIGTERM must explicitly exit
 signal(SIGTERM).tap: { say "\nTerminated..."; exit 0 };
 
 # Give a little demo
