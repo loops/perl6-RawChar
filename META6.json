@@ -1,0 +1,19 @@
+{
+	"perl" : "6.c",
+	"name" : "IO::RawChar",
+	"auth" : "github:loops",
+	"api" : "1",
+	"version" : "0.0.1",
+	"description" : "Get raw input character without blocking on Linux",
+	"authors" : [ "Sean Estabrooks" ],
+	"license" : "Artistic-2.0",
+	"provides" : {
+		"IO::RawChar" : "lib/IO/RawChar.pm6"
+	},
+	"depends" : [ "Term::termios" ],
+	"build-depends" : [ ],
+	"test-depends" : [ ],
+	"resources" : [ ],
+	"tags": [ "RawChar" ],
+	"source-url" : "git://github.com/loops/perl6-RawChar.git"
+}
