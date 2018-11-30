@@ -8,7 +8,7 @@ IO::RawChar
 
 Note:
 	
-	Once the class has been instantiated the terminal will be in "raw" mode
+	Once the class has been instantiated, the terminal will be in "raw" mode
 	which will be a problem for the user if it isn't reset before program end.
 	So this class will reset the terminal if SIGTERM is sent to the program.
 	It's up to you to make sure that SIGTERM causes the program to exit after
